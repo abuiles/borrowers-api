@@ -26,3 +26,4 @@ gem 'sqlite3'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+gem "jsonapi-resources", "~> 0.6.2"
