@@ -10,6 +10,11 @@ gem 'spring', :group => :development
 
 gem 'sqlite3'
 
+group :development, :test do
+  gem "byebug", "~> 8.2.1"
+end
+
+
 
 
 # To use ActiveModel has_secure_password
@@ -25,5 +30,4 @@ gem 'sqlite3'
 # gem 'capistrano', :group => :development
 
 # To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
 gem "jsonapi-resources", "~> 0.6.2"
