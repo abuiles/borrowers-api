@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  notes: MyText
+  friend_id: 
+  article_id: 
+  returned: false
+
+two:
+  notes: MyText
+  friend_id: 
+  article_id: 
+  returned: false
