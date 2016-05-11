@@ -1,0 +1,21 @@
+{
+  "name": "Borrowers API",
+  "description": "API from https://leanpub.com/json-api-by-example",
+  "keywords": [
+    "JSON-API",
+    "Rails",
+    "Ember"
+  ],
+  "addons": [
+    "heroku-postgresql:hobby-dev"
+  ],
+  "env": {
+    "LANG": "en_US.UTF-8",
+    "RAILS_ENV": "production",
+    "RACK_ENV": "production",
+    "SECRET_KEY_BASE": "REDACTED"
+  },
+  "scripts": {
+    "postdeploy": "bundle exec rake db:migrate"
+  }
+}
