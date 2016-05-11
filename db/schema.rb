@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20160416211329) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "articles", force: :cascade do |t|
     t.string   "name"
     t.boolean  "available"
@@ -38,7 +41,9 @@ ActiveRecord::Schema.define(version: 20160416211329) do
     t.datetime "updated_at", null: false
   end
 
-  add_index "loans", ["article_id"], name: "index_loans_on_article_id"
-  add_index "loans", ["friend_id"], name: "index_loans_on_friend_id"
+  add_index "loans", ["article_id"], name: "index_loans_on_article_id", using: :btree
+  add_index "loans", ["friend_id"], name: "index_loans_on_friend_id", using: :btree
 
+  add_foreign_key "loans", "articles"
+  add_foreign_key "loans", "friends"
 end
