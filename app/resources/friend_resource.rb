@@ -1,6 +1,6 @@
 class FriendResource < JSONAPI::Resource
   attribute :first_name
-  attributes :last_name, :email, :twitter
+  attributes :last_name, :email, :twitter, :created_at
 
   has_many :loans, acts_as_set: true
 
