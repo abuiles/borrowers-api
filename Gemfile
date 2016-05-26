@@ -9,3 +9,4 @@ gem 'spring', :group => :development
 
 gem 'pg'
 gem "jsonapi-resources", "~> 0.7.1.beta1"
+gem 'rack-cors', :require => 'rack/cors'
