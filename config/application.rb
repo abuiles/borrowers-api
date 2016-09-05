@@ -30,7 +30,8 @@ module BorrowersApi
         resource '*',
                  :headers => :any,
                  :methods => [:get, :post, :delete, :put, :options, :head],
-                 :max_age => 0
+                 :max_age => 0,
+                 :expose  => ['Access-Control-Allow-Origin']
       end
     end
   end
